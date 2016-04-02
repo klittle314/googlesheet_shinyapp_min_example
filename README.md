@@ -3,11 +3,11 @@ Minimum example to show failure of a shiny app to load on the shinyapps.io site 
 
 You need to have a Google Drive account and googlesheets package installed and a shinyapps.io account
 
-You need to have a Google Sheet like the example here in your drive:
+You need to have a Google Sheet like the example here in your Google Drive:
 https://docs.google.com/spreadsheets/d/1QhPtrsukBCVZJ-t-nSxCLR1J2OCX-yVReAGVYXIzexM/edit?usp=sharing
 
 
-to set up and test for failure, open the app and in your console type
+To set up and test for failure, open the app and in your console type
 gs_auth()
 
 Grant permission to googlesheets to operate on your behalf with Google Sheets and Google Drive.
