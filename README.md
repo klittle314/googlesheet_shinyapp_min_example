@@ -1,20 +1,21 @@
 # googlesheet_shinyapp_min_example
 Somewhat minimal example to show failure of a shiny app to load on the shinyapps.io site using googlesheets.
 
-You need to have a Google Drive account and googlesheets package installed and a shinyapps.io account
+You need to have a Google Drive account and a shinyapps.io account
 
 You need to have a Google Sheet like the example here in your Google Drive:
 https://docs.google.com/spreadsheets/d/1QhPtrsukBCVZJ-t-nSxCLR1J2OCX-yVReAGVYXIzexM/edit?usp=sharing
 
 
-To set up and test for failure, open the app and in your console type
+To set up and test for failure, open the Shiny app in RStudio, install googlesheets package and in your console type
+library(googlesheets)
 gs_auth()
 
 Grant permission to googlesheets to operate on your behalf with Google Sheets and Google Drive.
 
-Confirm that you now have a .httr-oauth in your current working directory.
+Confirm that you now have a .httr-oauth file in your current working directory.
 
-Run the shiny app locally to confirm that you can run the app:  it should just copy the Google Sheet into a table.   You can select one or more rows and then download an Excel spreadsheet with the chosen rows.
+Run the shiny app locally to confirm that the script functions:  it should just copy the Google Sheet into a table in the ui.   You can select one or more rows and then download an Excel spreadsheet with the chosen rows.
 
 Now try to publish the app to your account on shinyapps.io
 
