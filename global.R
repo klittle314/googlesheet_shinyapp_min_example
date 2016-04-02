@@ -16,7 +16,7 @@ library(openssl)
 #Credentials to interact with Google Sheets, requires .httr-oauth file in working directory
 ##########################################
 
-
+#Example key for my simple spreadsheet on google drive
 gskey2 <- "1QhPtrsukBCVZJ-t-nSxCLR1J2OCX-yVReAGVYXIzexM"
 
 # register the googlesheet
